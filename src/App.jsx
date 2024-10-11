@@ -1,34 +1,38 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+// 'use client'
+// import { useState } from 'react';
 import './App.css'
+import ImageGallery from './components/Gallery/ImageGallery.jsx'
+// import Selector from './components/Selector/Selector.jsx';
+
+const imageLinks = [
+  './images/sunira-moses-r149yvhlJ4Q-unsplash.jpg',
+  './images/erik-jan-leusink---SDX4KWIbA-unsplash.jpg',
+  './images/jonathan-fink-Sa1z1pEzjPI-unsplash.jpg',
+  './images/alex-konokh-6MKJbkZ0qNY-unsplash.jpg',
+  './images/amjith-s-VJGBwaB57Fg-unsplash.jpg',
+  './images/borna-bevanda-VwqecUsYKvs-unsplash.jpg',
+  './images/hanny-naibaho--Go4DH2pZbc-unsplash.jpg',
+  './images/diana-macesanu-FoY0-gwa9N4-unsplash.jpg',
+  './images/karlijn-prot-3fjyk4CLfvA-unsplash.jpg',
+  './images/sandy-millar-kKAaCeGf5wY-unsplash.jpg',
+  './images/charlesdeluvio-Mv9hjnEUHR4-unsplash.jpg',
+  './images/ricky-kharawala-adK3Vu70DEQ-unsplash.jpg',
+]
 
 function App() {
-  const [count, setCount] = useState(0)
+
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div className='p-4'>
+      {/* navbar */}
+      {/* bread crumbs */}
+      {/* card album fotografo */}
+      {/* selector */}
+      <ImageGallery images={imageLinks} />
+      {/* titulo seccion */}
+      {/* fotografos destacados */}
+      {/* footer */}
+    </div>
   )
 }
 
