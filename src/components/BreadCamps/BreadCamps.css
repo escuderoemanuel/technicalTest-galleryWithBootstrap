@@ -1,4 +1,30 @@
 .bread-camps-container {
   height: 24px;
-  background-color: aqua;
+  width: 100%;
+}
+
+.breadcamps-icon-files,
+.breadcamps-albums {
+  color: var(--orange-1);
+}
+
+.breadcamps-icon-files {
+  font-size: 14px;
+}
+
+.breadcamps-albums {
+  text-decoration: underline;
+}
+
+.breadcamps-icon-arrow,
+.breadcamps-date {
+  color: var(--gray-2);
+}
+
+.breadcamps-icon-arrow {
+  font-size: 8px;
+}
+
+.breadcamps-date {
+  font-size: 16px;
 }
