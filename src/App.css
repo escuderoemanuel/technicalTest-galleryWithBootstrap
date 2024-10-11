@@ -10,6 +10,7 @@
 
   /* Paleta de Colores */
   --orange-1: #D63415;
+  --orange-1-tr: rgba(214, 52, 21, .14);
   --orange-2: #EC3F1E;
   --orange-3: #EFAEA1;
   --orange-4: #B0321A;
@@ -34,4 +35,8 @@
   --servicio-5: #1cacfc;
 
   --texto-contacto: #1e1e1e;
+}
+
+.main-container {
+  max-width: 1140px;
 }

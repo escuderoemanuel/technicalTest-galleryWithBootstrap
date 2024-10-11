@@ -1,0 +1,35 @@
+.navbar-container {
+  height: 56px;
+  width: 100%;
+  font-weight: 400;
+  color: var(--gray-1);
+}
+
+.navbar-brand-container {
+  height: 40px;
+  width: 84px;
+  background: linear-gradient(var(--shadow-1), var(--shadow-1)) var(--orange-1);
+  color: var(--white);
+}
+
+.navbar-brand {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.navbar-icon-cart {
+  font-size: 24px;
+}
+
+.navbar-icon-arrow {
+  font-size: 14px;
+}
+
+.badge-name {
+  background-color: var(--orange-3);
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  font-size: 14px;
+  color: var(--orange-4);
+}

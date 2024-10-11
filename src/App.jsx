@@ -1,7 +1,12 @@
 // 'use client'
 // import { useState } from 'react';
 import './App.css'
+import BreadCamps from './components/BreadCamps/BreadCamps.jsx'
+import CardAlbumPhotographer from './components/CardAlbumPhotographer/CardAlbumPhotographer.jsx'
+import FeaturedPhotographers from './components/FeaturedPhotographers/FeaturedPhotographers.jsx'
+import Footer from './components/Footer/Footer.jsx'
 import ImageGallery from './components/Gallery/ImageGallery.jsx'
+import Navbar from './components/Navbar/Navbar.jsx'
 // import Selector from './components/Selector/Selector.jsx';
 
 const imageLinks = [
@@ -23,15 +28,19 @@ function App() {
 
 
   return (
-    <div className='p-4'>
+    <div className='main-container'>
       {/* navbar */}
+      <Navbar />
       {/* bread crumbs */}
+      <BreadCamps />
       {/* card album fotografo */}
+      <CardAlbumPhotographer />
       {/* selector */}
       <ImageGallery images={imageLinks} />
-      {/* titulo seccion */}
       {/* fotografos destacados */}
+      <FeaturedPhotographers />
       {/* footer */}
+      <Footer />
     </div>
   )
 }
