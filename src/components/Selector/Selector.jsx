@@ -40,22 +40,22 @@ export default function Selector({ columns, onColumnsChange }) {
   };
 
   return <>
-    <div className="selector-container bg-white rounded-4 mb-3 d-flex justify-content-between align-item-center px-4" style={{ height: '49px' }}>
+    <div className="selector-container bg-white rounded-4 mb-3 d-flex justify-content-between align-item-center px-4 m-0" >
 
       {/* Contenedor de la izquierda */}
-      <div className="d-flex align-items-center">
+      <div className="d-flex align-items-center m-0">
         <p className='p-0 m-0'>Seleccionados
-          <span className='selected-quantity ms-2'>0</span>
+          <span className='selected- ms-2'>0</span>
         </p>
       </div >
 
       {/* Contenedor de la derecha */}
-      <div className="d-flex align-items-center bg-white">
+      <div className="d-flex align-items-center bg-white m-0">
         <label htmlFor="range1" className="form-label m-0 me-4">Ver como</label>
 
-        <div className='m-0 p-0'>
+        <div className=''>
           {/* Contenedor del selector (Barra-Marcador Móvil-Marcadores Estáticos-Squares)*/}
-          <div className="range-container" >
+          <div className="range-container " >
             {/* Barra de selección y Marcador Móvil */}
             <input
               className="form-range"
@@ -70,10 +70,10 @@ export default function Selector({ columns, onColumnsChange }) {
             />
             {/* Marcadores sobre la barra */}
             <div className='mark-point-content d-flex justify-content-between'>
-              <span className='mark-point'></span>
-              <span className='mark-point'></span>
-              <span className='mark-point'></span>
-              <span className='mark-point'></span>
+              <span className='mark-point m-0'></span>
+              <span className='mark-point m-0'></span>
+              <span className='mark-point m-0'></span>
+              <span className='mark-point m-0'></span>
             </div>
 
 
@@ -84,7 +84,7 @@ export default function Selector({ columns, onColumnsChange }) {
               top: '-10px',
             }}>
               <span
-                className="square-point"
+                className="square-point m-0"
                 style={{
                   backgroundImage: `url('/selector/square4x2.svg')`,
                   width: '19px',
@@ -96,7 +96,7 @@ export default function Selector({ columns, onColumnsChange }) {
                 }}
               ></span>
               <span
-                className="square-point"
+                className="square-point  m-0"
                 style={{
                   backgroundImage: `url('/selector/square3x2.svg')`,
                   width: '19px',
@@ -108,7 +108,7 @@ export default function Selector({ columns, onColumnsChange }) {
                 }}
               ></span>
               <span
-                className="square-point"
+                className="square-point m-0"
                 style={{
                   backgroundImage: `url('/selector/square2x2.svg')`,
                   width: '19px',
@@ -120,7 +120,7 @@ export default function Selector({ columns, onColumnsChange }) {
                 }}
               ></span>
               <span
-                className="square-point"
+                className="square-point m-0"
                 style={{
                   backgroundImage: `url('/selector/square1x2.svg')`,
                   width: '19px',

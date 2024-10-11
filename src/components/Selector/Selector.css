@@ -1,6 +1,5 @@
 .selector-container {
   height: 49px;
-  height: auto;
 }
 
 /* Sección Derecha */
@@ -51,12 +50,11 @@ input[type="range"]::-webkit-slider-thumb {
   border-radius: 50%;
   position: relative;
   top: -16.5px;
-  left: 0%;
   pointer-events: none;
 }
 
 /* Squares */
 .square-point-content {
   width: 216px;
-  height: 20px;
+
 }
