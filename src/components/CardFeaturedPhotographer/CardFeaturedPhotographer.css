@@ -1,8 +1,10 @@
-.card {
+.individual-card {
   width: 270px;
   height: 292px;
   border: none;
   box-shadow: 1px 4px 5px 1px var(--shadow-1);
+  flex-shrink: 0;
+  background-color: var(--white);
 }
 
 .card-img {

@@ -1,5 +1,6 @@
 // 'use client'
 // import { useState } from 'react';
+import { useEffect, useState } from 'react'
 import './App.css'
 import BreadCamps from './components/BreadCamps/BreadCamps.jsx'
 import CardAlbumPhotographer from './components/CardAlbumPhotographer/CardAlbumPhotographer.jsx'
@@ -24,19 +25,32 @@ const imageLinks = [
   './images/ricky-kharawala-adK3Vu70DEQ-unsplash.jpg',
 ]
 
-function App() {
 
+function App() {
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+    // Escuchar evento de redimensionamiento
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      // Eliminar el listener al desmontar el componente
+      window.removeEventListener('resize', handleResize);
+    };
+  }, [])
 
   return (
-    <div className=' m-0 p-0 justify-content-center align-items-center col'>
-      <Navbar />
-      <BreadCamps />
-      <CardAlbumPhotographer />
-      {/* selector */}
-      <ImageGallery images={imageLinks} />
-      {/* fotografos destacados */}
-      <FeaturedPhotographers />
-      {/* footer */}
+    <div className='main-container'>
+      <Navbar isMobile={isMobile} />
+      <div className='p-4 justify-content-center align-items-center col'>
+        <BreadCamps />
+        <CardAlbumPhotographer />
+        <ImageGallery images={imageLinks} isMobile={isMobile} />
+        <FeaturedPhotographers />
+      </div>
       <Footer />
     </div>
   )

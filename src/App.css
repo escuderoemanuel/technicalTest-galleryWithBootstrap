@@ -1,6 +1,7 @@
 #root {
   box-sizing: border-box;
   width: 100%;
+  min-width: var(--min-content);
   margin: 0 auto;
   padding: 0;
   text-align: center;
@@ -27,12 +28,9 @@
   --shadow-1: rgba(0, 0, 0, 0.14);
   --shadow-2: rgba(0, 0, 0, 0.20);
 
-  --texto-servicios: #0f243c;
-  --servicio-1: #ffffff;
-  --servicio-2: #d0eeff;
-  --servicio-3: #95daff;
-  --servicio-4: #52c2ff;
-  --servicio-5: #1cacfc;
-
-  --texto-contacto: #1e1e1e;
+  --max-content: 1140px;
+  --min-content: 360px;
+  --max-root: 100vw;
+  --max-body: 100%;
+  --max-main: 1280px;
 }

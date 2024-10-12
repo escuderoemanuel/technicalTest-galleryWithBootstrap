@@ -1,10 +1,12 @@
 /* eslint-disable react/prop-types */
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import './ImageGallery.css';
-import Selector from '../Selector/Selector.jsx';
+import DesktopSelector from '../Selectors/DesktopSelector.jsx';
 import { useState } from 'react';
+import MobileSelector from '../Selectors/MobileSelector.jsx';
 
-export default function ImageGallery({ images }) {
+export default function ImageGallery({ images, isMobile }) {
+
   const [columns, setColumns] = useState(4); // Estado global para las columnas
 
   const isAcquired = (index) => {
@@ -14,7 +16,11 @@ export default function ImageGallery({ images }) {
 
   return (
     <div className='image-gallery-container d-flex flex-column mb-4'>
-      <Selector columns={columns} onColumnsChange={setColumns} />
+      {isMobile ?
+        <MobileSelector columns={columns} onColumnsChange={setColumns} />
+        :
+        <DesktopSelector columns={columns} onColumnsChange={setColumns} />
+      }
       <div className={`row row-cols-${columns} g-4 mb-4`}>
         {images.map((image, index) => (
           <div key={index} className="d-flex image-container position-relative">

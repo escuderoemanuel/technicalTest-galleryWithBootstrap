@@ -2,7 +2,7 @@ import './Navbar.css'
 
 export default function Navbar() {
   return (
-    <div className='header'>
+    <div className='header px-2'>
       <div className='navbar-container d-flex justify-content-between align-items-center'>
         <div className='navbar-brand-container d-flex justify-content-center align-items-center text-center m-0 p-0'>
           <div className="navbar-brand d-flex justify-content-center align-items-center text-center m-0 p-0" href="#">LOGO</div>
@@ -41,7 +41,6 @@ export default function Navbar() {
             </a>
           </div>
           <i className='link navbar-icon-cart bi bi-cart2 ms-3'>
-            <span className='badge bg-danger text-white'>1</span>
           </i>
         </div>
       </div>

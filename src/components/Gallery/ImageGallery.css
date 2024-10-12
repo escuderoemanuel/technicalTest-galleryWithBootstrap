@@ -1,10 +1,10 @@
 .image-gallery-container {
-  max-width: 1140px;
+  max-width: var(--max-content);
 }
 
 .image {
   width: 100%;
-  max-width: 1140px;
+  max-width: var(--max-content);
   aspect-ratio: 1 / 1;
   object-fit: cover;
   position: relative;

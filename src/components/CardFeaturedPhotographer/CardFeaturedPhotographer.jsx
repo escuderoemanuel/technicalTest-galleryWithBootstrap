@@ -3,7 +3,7 @@ import './CardFeaturedPhotographer.css';
 
 export default function CardFeaturedPhotographer({ imageUrl, name, location, type }) {
   return (
-    <div className='card d-flex justify-content-between align-items-center text-center p-4'>
+    <div className='individual-card text-center p-4 rounded'>
 
       <img src={imageUrl} className='card-img m-0 mb-2' alt={`Imagen de perfil de ${name}`} />
 

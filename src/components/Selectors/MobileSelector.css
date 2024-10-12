@@ -1,25 +1,26 @@
-.selector-container {
+.m-selector-container {
   height: 49px;
-  max-width: 1140px;
+  max-width: var(--max-content);
+  font-size: 12px;
 }
 
 /* Sección Derecha */
-.selected-quantity {
+.m-selected-quantity {
   color: var(--gray-1);
   font-weight: bold;
 }
 
 /* Sección Izquierda */
-.range-container {
+.m-range-container {
   height: 49px;
   position: relative;
   top: 5px;
 }
 
 /* Barra del selector */
-.form-range {
-  height: 8px;
-  width: 216px;
+.m-form-range {
+  height: 4px;
+  width: 171px;
   position: relative;
 }
 
@@ -37,11 +38,11 @@ input[type="range"]::-webkit-slider-thumb {
 }
 
 /* Marcas en la barra del selector */
-.mark-point-content {
-  width: 216px;
+.m-mark-point-content {
+  width: 171px;
 }
 
-.mark-point {
+.m-mark-point {
   content: '';
   width: 12px;
   height: 12px;
@@ -49,11 +50,11 @@ input[type="range"]::-webkit-slider-thumb {
   border: 2px solid var(--gray-7);
   border-radius: 50%;
   position: relative;
-  top: -16.5px;
+  top: -13px;
   pointer-events: none;
 }
 
 /* Squares */
-.square-point-content {
-  width: 216px;
+.m-square-point-content {
+  width: 171px;
 }

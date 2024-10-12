@@ -1,8 +1,8 @@
 /* eslint-disable react/prop-types */
 import { useEffect } from 'react';
-import './Selector.css';
+import './DesktopSelector.css';
 
-export default function Selector({ columns, onColumnsChange }) {
+export default function DesktopSelector({ columns, onColumnsChange }) {
 
   // Función para actualizar las columnas según el ancho de la ventana
   const updateColumnsBasedOnWidth = () => {
@@ -45,7 +45,7 @@ export default function Selector({ columns, onColumnsChange }) {
       {/* Contenedor de la izquierda */}
       <div className="d-flex align-items-center m-0">
         <p className='p-0 m-0'>Seleccionados
-          <span className='selected- ms-2'>0</span>
+          <span className='selected-quantity ms-2'>1</span>
         </p>
       </div >
 
@@ -78,7 +78,6 @@ export default function Selector({ columns, onColumnsChange }) {
 
 
             {/* Contenedor de los svg debajo de la barra */}
-            {/* <div className='svg-container d-flex justify-content-between '> */}
             <div className='square-point-content d-flex justify-content-between' style={{
               position: 'relative',
               top: '-10px',
@@ -132,7 +131,6 @@ export default function Selector({ columns, onColumnsChange }) {
                 }}
               ></span>
             </div>
-            {/* </div > */}
           </div>
         </div>
       </div >

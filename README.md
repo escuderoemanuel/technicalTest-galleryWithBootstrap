@@ -1,5 +1,14 @@
 # Requerimientos
 
+# TODO:
+* RESPONSIVE:
+  * Footer responsive
+  * Chequear todo
+  * Ocultar nombre de la Navbar Cuando está en desktop
+  * Chequear la posición de los squares en mobile
+  * Chequear la posición del icon cart en las img
+
+
 ## Parte 1 Maquetación con Bootstrap
 
 - Usando como referencia el prototipo de Figma proporcionado, debés maquetar una galería de fotos que sea responsive.
@@ -22,7 +31,12 @@
 > - las fotos que han sido adquiridas por el usuario son las únicas que no cuentan con marca de agua.
 > - Entregá esta prueba técnica enviando por mail un link público al proyecto desde tu repositorio de GitHub. No olvides dejar comentarios en el código al mail **recruitment@wearezeaze.com**
 > - **Imágenes:** https://drive.google.com/drive/folders/1UCDfKBzYY2q2fMncLjtbRGGZRyR9H4fF?usp=sharing
->
+
+### Ejemplo Vista Desktop
+![Desktop](./public/models/DesktopModel.png)
+
+### Ejemplo Vista Mobile
+![Desktop](./public/models/MobileModel.png)
 
 ## Instructions
 
