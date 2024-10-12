@@ -5,7 +5,7 @@ import './CardAlbumPhotographer.css'
 
 export default function CardAlbumPhotographer() {
   return (
-    <div className='card-album-photographer-container'>
+    <div className='card-album-photographer-container mb-3'>
       <BannerPhotographer />
       <InfoPhotographer />
       <ButtonsPhotographer />

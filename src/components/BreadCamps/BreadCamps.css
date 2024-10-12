@@ -1,6 +1,8 @@
 .bread-camps-container {
   height: 24px;
   width: 100%;
+  max-width: 1140px;
+  /* background-color: aqua; */
 }
 
 .breadcamps-icon-files,

@@ -1,8 +1,15 @@
+.image-gallery-container {
+  max-width: 1140px;
+}
+
 .image {
   width: 100%;
+  max-width: 1140px;
   aspect-ratio: 1 / 1;
   object-fit: cover;
   position: relative;
+  border: 2px solid var(--white);
+  box-shadow: 1px 1px 7px 2px var(--shadow-2);
 }
 
 .image-container {

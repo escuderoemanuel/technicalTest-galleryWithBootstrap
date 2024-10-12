@@ -1,5 +1,17 @@
 .featured-photographers-container {
-  height: 460px;
-  background-color: blueviolet;
-  margin-bottom: 2rem;
+  max-width: 1140px;
+  height: auto;
+  margin-bottom: 3rem;
+}
+
+.featured-photographers-container .card {
+  background-color: var(--white);
+}
+
+.featured-photographers-container h2 {
+  color: var(--gray-3);
+}
+
+.cards-container {
+  width: 100%;
 }

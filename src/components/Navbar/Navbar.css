@@ -1,6 +1,6 @@
 .navbar-container {
   height: 56px;
-  width: 100%;
+  max-width: 1140px;
   font-weight: 400;
   color: var(--gray-1);
 }
