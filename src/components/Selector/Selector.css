@@ -9,7 +9,6 @@
   font-weight: bold;
 }
 
-
 /* Sección Izquierda */
 .range-container {
   height: 49px;
@@ -57,5 +56,4 @@ input[type="range"]::-webkit-slider-thumb {
 /* Squares */
 .square-point-content {
   width: 216px;
-
 }

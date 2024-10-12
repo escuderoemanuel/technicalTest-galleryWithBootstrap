@@ -28,7 +28,7 @@ function App() {
 
 
   return (
-    <div className='main-container m-0 p-0 justify-content-center align-items-center col'>
+    <div className=' m-0 p-0 justify-content-center align-items-center col'>
       <Navbar />
       <BreadCamps />
       <CardAlbumPhotographer />

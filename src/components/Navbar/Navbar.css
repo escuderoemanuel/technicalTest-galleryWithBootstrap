@@ -1,8 +1,14 @@
-.navbar-container {
+.header {
+  min-width: 100vw;
   height: 56px;
-  max-width: 1140px;
   font-weight: 400;
   color: var(--gray-1);
+  background-color: var(--white);
+  cursor: default;
+}
+
+.navbar-container {
+  max-width: 1140px;
 }
 
 .navbar-brand-container {
@@ -32,4 +38,16 @@
   border-radius: 50%;
   font-size: 14px;
   color: var(--orange-4);
+}
+
+.link {
+  transition: all ease 200ms;
+  /* font-weight: 500; */
+  color: var(--gray-1);
+  cursor: default;
+
+}
+
+.link:hover {
+  color: var(--orange-1)
 }
