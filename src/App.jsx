@@ -4,7 +4,7 @@ import CardAlbumPhotographer from './components/CardAlbumPhotographer/CardAlbumP
 import FeaturedPhotographers from './components/FeaturedPhotographers/FeaturedPhotographers.jsx'
 import Footer from './components/Footer/Footer.jsx'
 import ImageGallery from './components/Gallery/ImageGallery.jsx'
-import Navbar from './components/Navbar/Navbar.jsx'
+import Header from './components/Header/Header.jsx'
 
 const imageLinks = [
   './images/sunira-moses-r149yvhlJ4Q-unsplash.jpg',
@@ -25,7 +25,7 @@ function App() {
 
   return (
     <div className='main-container'>
-      <Navbar />
+      <Header />
       <div className='p-2 justify-content-center align-items-center col'>
         <BreadCamps />
         <CardAlbumPhotographer />

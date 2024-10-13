@@ -5,7 +5,7 @@ import { useState } from 'react';
 import Selector from '../Selectors/Selector.jsx';
 
 export default function ImageGallery({ images }) {
-  const [columns, setColumns] = useState(4); // Estado global para las columnas
+  const [columns, setColumns] = useState(4); // Estado inicial para las columnas
 
   const isAcquired = (index) => {
     //! Lógica para verificar si la imagen está adquirida y así quitar la marca de agua

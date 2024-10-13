@@ -1,9 +1,11 @@
-import './Navbar.css'
+import './Header.css'
 
-export default function Navbar() {
+export default function Header() {
   return (
     <div className='header px-2'>
-      <div className='navbar-container d-flex justify-content-between align-items-center'>
+
+      {/* Navbar Container */}
+      <div className='navbar-container d-flex justify-content-between align-items-center '>
 
         {/* Contenedor Izquierda (Logo) */}
         <div className='navbar-brand-container d-flex justify-content-center align-items-center text-center m-0 p-0'>
