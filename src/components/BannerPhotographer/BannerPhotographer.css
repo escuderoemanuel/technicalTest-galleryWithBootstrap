@@ -2,3 +2,20 @@
   width: 100%;
   height: auto;
 }
+
+.mobile-banner {
+  display: none;
+}
+
+/* Mobile (pantallas más chicas que 768px) */
+@media (max-width: 768px) {
+  .mobile-banner {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .desktop-banner {
+    display: none;
+  }
+}

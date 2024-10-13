@@ -1,5 +1,6 @@
+/* Header General */
 .header {
-  min-width: 100vw;
+  min-width: 100%;
   height: 56px;
   font-weight: 400;
   color: var(--gray-1);
@@ -41,13 +42,11 @@
 }
 
 .link {
-  transition: all ease 200ms;
-  /* font-weight: 500; */
+  transition: all ease 100ms;
   color: var(--gray-1);
   cursor: default;
-
 }
 
 .link:hover {
-  color: var(--orange-1)
+  color: var(--orange-1);
 }

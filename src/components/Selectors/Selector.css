@@ -1,0 +1,123 @@
+.d-selector-container {
+  height: 49px;
+  max-width: var(--max-content);
+  color: var(--gray-3);
+}
+
+/* Sección Derecha */
+.selected-quantity {
+  color: var(--gray-1);
+  font-weight: bold;
+}
+
+/* Sección Izquierda */
+.range-container {
+  height: 49px;
+  position: relative;
+  top: 5px;
+}
+
+/* Barra del selector */
+.form-range {
+  height: 8px;
+  width: 216px;
+  position: relative;
+}
+
+/* Marcador móvil */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  position: relative;
+  top: 2px;
+  height: 11px;
+  width: 11px;
+  background-color: var(--white);
+  border: 2px solid var(--orange-3);
+  box-shadow: 0 0 0 2px var(--orange-1);
+  z-index: 100;
+}
+
+/* Marcas en la barra del selector */
+.mark-point-content {
+  width: 216px;
+}
+
+.mark-point {
+  content: '';
+  width: 12px;
+  height: 12px;
+  background-color: var(--white);
+  border: 2px solid var(--gray-7);
+  border-radius: 50%;
+  position: relative;
+  top: -17px;
+  pointer-events: none;
+}
+
+/* Squares */
+.square-point-content {
+  width: 216px;
+}
+
+
+/*! MOBILE */
+.m-selector-container {
+  height: 49px;
+  max-width: var(--max-content);
+  font-size: 12px;
+}
+
+/* Sección Derecha */
+.m-selected-quantity {
+  color: var(--gray-1);
+  font-weight: bold;
+}
+
+/* Sección Izquierda */
+.m-range-container {
+  height: 49px;
+  position: relative;
+  top: 5px;
+}
+
+/* Barra del selector */
+.m-form-range {
+  height: 4px;
+  width: 171px;
+  position: relative;
+}
+
+/* Marcador móvil */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  position: relative;
+  top: 2px;
+  height: 11px;
+  width: 11px;
+  background-color: var(--white);
+  border: 2px solid var(--orange-3);
+  box-shadow: 0 0 0 2px var(--orange-1);
+  z-index: 100;
+}
+
+/* Marcas en la barra del selector */
+.m-mark-point-content {
+  width: 171px;
+}
+
+.m-mark-point {
+  content: '';
+  width: 12px;
+  height: 12px;
+  background-color: var(--white);
+  border: 2px solid var(--gray-7);
+  border-radius: 50%;
+  position: relative;
+  top: -13px;
+  pointer-events: none;
+}
+
+/* Squares */
+.m-square-point-content {
+  width: 171px;
+}

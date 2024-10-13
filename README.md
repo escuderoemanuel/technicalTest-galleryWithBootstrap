@@ -1,31 +1,22 @@
 # Requerimientos
 
-# TODO:
-* RESPONSIVE:
-  * Footer responsive
-  * Chequear todo
-  * Ocultar nombre de la Navbar Cuando está en desktop
-  * Chequear la posición de los squares en mobile
-  * Chequear la posición del icon cart en las img
-
-
 ## Parte 1 Maquetación con Bootstrap
 
-- Usando como referencia el prototipo de Figma proporcionado, debés maquetar una galería de fotos que sea responsive.
-- La galería debe adaptarse a los siguientes puntos de quiebre:
-- Desktop: 1200px o más  **(xl)**
-- Tablet: 768px a 1199px **(md)**
-- Mobile: 360 a 768px. **(sm)**
+✅ Usando como referencia el prototipo de Figma proporcionado, debés maquetar una galería de fotos que sea responsive 
+✅ La galería debe adaptarse a los siguientes puntos de quiebre:
+  ✅ Desktop: 1200px o más  **(xl)**
+  ✅ Tablet: 768px a 1199px **(md)**
+  ✅ Mobile: 360 a 768px. **(sm)**
 
 ## Parte 2: Implementación con React
 
-- Convertí la galería de fotos en un **componente funcional** de React.
-- La galería debe **recibir un arreglo de imágenes como props y renderizarlas dinámicamente**.
-- Implementá un **selector** que permita cambiar la galería en 4 tipos de grillas:
-- 4 fotos por fila
-- 3 fotos por fila
-- 2 fotos por fila
-- 1 foto por fila.
+✅ Convertí la galería de fotos en un **componente funcional** de React.
+✅ La galería debe **recibir un arreglo de imágenes como props y renderizarlas dinámicamente**.
+✅ Implementá un **selector** que permita cambiar la galería en 4 tipos de grillas:
+  ✅ 4 fotos por fila
+  ✅ 3 fotos por fila
+  ✅ 2 fotos por fila
+  ✅ 1 foto por fila.
 
 > **Importante:** 
 > - las fotos que han sido adquiridas por el usuario son las únicas que no cuentan con marca de agua.

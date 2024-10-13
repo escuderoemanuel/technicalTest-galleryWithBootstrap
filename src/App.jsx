@@ -1,6 +1,3 @@
-// 'use client'
-// import { useState } from 'react';
-import { useEffect, useState } from 'react'
 import './App.css'
 import BreadCamps from './components/BreadCamps/BreadCamps.jsx'
 import CardAlbumPhotographer from './components/CardAlbumPhotographer/CardAlbumPhotographer.jsx'
@@ -8,7 +5,6 @@ import FeaturedPhotographers from './components/FeaturedPhotographers/FeaturedPh
 import Footer from './components/Footer/Footer.jsx'
 import ImageGallery from './components/Gallery/ImageGallery.jsx'
 import Navbar from './components/Navbar/Navbar.jsx'
-// import Selector from './components/Selector/Selector.jsx';
 
 const imageLinks = [
   './images/sunira-moses-r149yvhlJ4Q-unsplash.jpg',
@@ -25,30 +21,15 @@ const imageLinks = [
   './images/ricky-kharawala-adK3Vu70DEQ-unsplash.jpg',
 ]
 
-
 function App() {
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768);
-    };
-    // Escuchar evento de redimensionamiento
-    window.addEventListener('resize', handleResize);
-
-    return () => {
-      // Eliminar el listener al desmontar el componente
-      window.removeEventListener('resize', handleResize);
-    };
-  }, [])
 
   return (
     <div className='main-container'>
-      <Navbar isMobile={isMobile} />
-      <div className='p-4 justify-content-center align-items-center col'>
+      <Navbar />
+      <div className='p-2 justify-content-center align-items-center col'>
         <BreadCamps />
         <CardAlbumPhotographer />
-        <ImageGallery images={imageLinks} isMobile={isMobile} />
+        <ImageGallery images={imageLinks} />
         <FeaturedPhotographers />
       </div>
       <Footer />

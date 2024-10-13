@@ -4,6 +4,7 @@
   margin-bottom: 3rem;
 }
 
+
 .featured-photographers-container .card {
   background-color: var(--white);
 }
@@ -14,4 +15,5 @@
 
 .cards-container {
   width: 100%;
+  /* scrollbar-width: none; */
 }

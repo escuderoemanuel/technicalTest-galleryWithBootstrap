@@ -1,34 +1,37 @@
 /* eslint-disable react/prop-types */
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import './ImageGallery.css';
-import DesktopSelector from '../Selectors/DesktopSelector.jsx';
 import { useState } from 'react';
-import MobileSelector from '../Selectors/MobileSelector.jsx';
+import Selector from '../Selectors/Selector.jsx';
 
-export default function ImageGallery({ images, isMobile }) {
-
+export default function ImageGallery({ images }) {
   const [columns, setColumns] = useState(4); // Estado global para las columnas
 
   const isAcquired = (index) => {
-    // Lógica para verificar si la imagen está adquirida
-    return index % 2 === 0; // Ejemplo: Adquiridas las imágenes pares
+    //! Lógica para verificar si la imagen está adquirida y así quitar la marca de agua
+    // Ejemplo según Figma
+    if (index === 2 || index === 9)
+      return true
   };
 
   return (
     <div className='image-gallery-container d-flex flex-column mb-4'>
-      {isMobile ?
-        <MobileSelector columns={columns} onColumnsChange={setColumns} />
-        :
-        <DesktopSelector columns={columns} onColumnsChange={setColumns} />
-      }
-      <div className={`row row-cols-${columns} g-4 mb-4`}>
+
+      <Selector columns={columns} onColumnsChange={setColumns} />
+
+      <div className={`row row-cols-${columns} g-2 m-0 mb-4`}>
         {images.map((image, index) => (
-          <div key={index} className="d-flex image-container position-relative">
-            <img src={image} alt={`Imagen ${index + 1}`} className="image img-fluid  rounded" />
-            {isAcquired(index) && <span>
-              <i className="bi bi-cart2 cart-icon"></i>
-              <img className='water-mark' src="/waterMark.png" alt="Marca de agua con la palabra LOGO" />
-            </span>}
+          <div key={index} className="d-flex">
+            <div className='image-container'>
+              <img src={image} alt={`Imagen ${index + 1}`} className="image img-fluid  rounded" />
+              {
+                !isAcquired(index) &&
+                <>
+                  <i className="bi bi-cart2 cart-icon"></i>
+                  <img className='water-mark' src="/waterMark.png" alt="Marca de agua con la palabra LOGO" />
+                </>
+              }
+            </div>
           </div>
 
         ))}

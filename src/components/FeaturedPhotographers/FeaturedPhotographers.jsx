@@ -1,4 +1,4 @@
-import CardFeaturedPhotographer from '../CardFeaturedPhotographer/CardFeaturedPhotographer'
+import CardsFeaturedPhotographer from '../CardFeaturedPhotographer/CardFeaturedPhotographer'
 import './FeaturedPhotographers.css'
 
 export default function FeaturedPhotographers() {
@@ -9,27 +9,27 @@ export default function FeaturedPhotographers() {
 
       {/* Contenedor de las Cards */}
       <div className='cards-container d-flex justify-content-between align-items-center gap-2 overflow-x-auto p-2'>
-        <CardFeaturedPhotographer
+        <CardsFeaturedPhotographer
           imageUrl={'./avatars/avatar1.png'}
           name={'Paula Pérez'}
           location={'Buenos Aires, CABA'}
           type={'Tienda de mascotas'}
         />
-        <CardFeaturedPhotographer
+        <CardsFeaturedPhotographer
 
           imageUrl={'./avatars/avatar2.png'}
           name={'Pedro Fuentes'}
           location={'Buenos Aires, CABA'}
           type={'Eventos'}
         />
-        <CardFeaturedPhotographer
+        <CardsFeaturedPhotographer
 
           imageUrl={'./avatars/avatar3.png'}
           name={'Patricio Funes'}
           location={'Buenos Aires, CABA'}
           type={'Fundación rescate'}
         />
-        <CardFeaturedPhotographer
+        <CardsFeaturedPhotographer
 
           imageUrl={'./avatars/avatar4.png'}
           name={'Macarena Ramirez'}
