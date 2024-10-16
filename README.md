@@ -53,3 +53,4 @@
   ```bash
   npm run dev
   ```
+4. Open it with your prefered browser

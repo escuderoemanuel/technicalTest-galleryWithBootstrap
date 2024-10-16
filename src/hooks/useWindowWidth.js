@@ -6,20 +6,19 @@ const useWindowWitdh = () => {
     typeof window !== "undefined" && window.innerWidth <= 768
   );
 
-  // Para chequear el tamaño de la pantalla al cargar la página
+  // Check size screen when the app starts
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 768);
     };
-    // Espera 300ms antes de actualizar para no hacer re-renderizados innecesarios
+    // Wait 300ms before update, to avoid too many renders
     const debouncedResize = debounce(handleResize, 300);
     window.addEventListener('resize', debouncedResize);
-    // Limpia el evento al desmontar el componente
+    // Clear event when the component is unmounted
     return () => {
       window.removeEventListener('resize', debouncedResize);
     };
   }, []);
-
   return isMobile;
 }
 

@@ -1,0 +1,21 @@
+.banner-photographer-container {
+  width: 100%;
+  height: auto;
+}
+
+.mobile-banner {
+  display: none;
+}
+
+/* Mobile (screens smaller than 768px) */
+@media (width < 768px) {
+  .mobile-banner {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .desktop-banner {
+    display: none;
+  }
+}

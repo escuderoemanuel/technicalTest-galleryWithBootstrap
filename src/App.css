@@ -12,6 +12,7 @@
   /* Paleta de Colores */
   --orange-1: #D63415;
   --orange-1-tr: rgba(214, 52, 21, .14);
+  --orange-tr: rgba(214, 52, 21, .6);
   --orange-2: #EC3F1E;
   --orange-3: #EFAEA1;
   --orange-4: #B0321A;
@@ -24,6 +25,7 @@
   --gray-6: #DEE2E6;
   --gray-7: #CBCED9;
   --white: #ffffff;
+  --white-tr: rgba(255, 255, 255, .5);
   --bg-1: #ffffff;
   --shadow-1: rgba(0, 0, 0, 0.14);
   --shadow-2: rgba(0, 0, 0, 0.20);

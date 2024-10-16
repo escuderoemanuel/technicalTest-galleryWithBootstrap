@@ -1,4 +1,4 @@
-/* Footer general */
+/* Footer */
 .footer {
   width: 100%;
   background-color: var(--orange-1);
@@ -27,7 +27,7 @@
 }
 
 
-/* Pantalla menor a 768px */
+/* Screen smaller than 768px */
 @media (width < 768px) {
   .footer {
     background-color: var(--bg-color);

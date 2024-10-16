@@ -1,7 +1,7 @@
 {
-  "name": "zeazeimagegallery",
+  "name": "frontend-react-imagegallery",
   "private": true,
-  "version": "1.0.0",
+  "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -14,7 +14,8 @@
     "bootstrap-icons": "^1.11.3",
     "lodash": "^4.17.21",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "sweetalert2": "^11.14.3"
   },
   "devDependencies": {
     "@eslint/js": "^9.11.1",

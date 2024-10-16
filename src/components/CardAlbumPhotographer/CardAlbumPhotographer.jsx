@@ -1,14 +1,14 @@
-import BannerPhotographer from '../BannerPhotographer/BannerPhotographer'
-import ButtonsPhotographer from '../ButtonsPhotographer/ButtonsPhotographer'
-import InfoPhotographer from '../InfoPhotographer/InfoPhotographer'
+import BannerPhotographer from './BannerPhotographer/BannerPhotographer'
+import ButtonsPhotographer from './ButtonsPhotographer/ButtonsPhotographer'
+import InfoPhotographer from './InfoPhotographer/InfoPhotographer'
 import './CardAlbumPhotographer.css'
 
-export default function CardAlbumPhotographer() {
+export default function CardAlbumPhotographer({ images }) {
   return (
     <div className='card-album-photographer-container mb-4'>
       <BannerPhotographer />
       <InfoPhotographer />
-      <ButtonsPhotographer />
+      <ButtonsPhotographer images={images} />
     </div>
   )
 }

@@ -26,6 +26,7 @@
 
 .navbar-icon-cart {
   font-size: 24px;
+  position: relative;
 }
 
 .navbar-icon-arrow {
@@ -49,4 +50,34 @@
 
 .link:hover {
   color: var(--orange-1);
+}
+
+
+.badge-cart {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  font-size: 10px;
+  font-weight: 900;
+  top: 2px;
+  right: -4px;
+  background-color: var(--orange-tr);
+  color: var(--white);
+  border-radius: 50%;
+}
+
+/* TODO: Change the background color when the menu is visible - Is not in FIGMA  */
+.show {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  background-color: var(--bg-color);
+  color: var(--gray-1);
+}
+
+.navbar-collapse.show .nav-item a {
+  display: flex;
+  font-size: 1.1rem;
 }
